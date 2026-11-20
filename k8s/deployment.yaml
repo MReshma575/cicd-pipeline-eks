@@ -17,12 +17,12 @@ spec:
       containers:
         - name: app
           # The CI pipeline rewrites this tag to the commit SHA on every merge to main.
-          image: ghcr.io/mreshma575/cicd-demo-app:latest
+          image: ghcr.io/mreshma575/cicd-demo-app:f7ffe0190f24194bfd068ab78250bf2e5aec1e32
           ports:
             - containerPort: 8080
           env:
             - name: APP_VERSION
-              value: "latest"
+              value: "f7ffe0190f24194bfd068ab78250bf2e5aec1e32"
           resources:
             requests:
               cpu: 100m
